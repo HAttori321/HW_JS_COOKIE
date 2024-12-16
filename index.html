@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="style.css">
+    <title>Adding colors</title>
+</head>
+<body>
+    <h1>Creating new colors</h1>
+    <form id="color-form">
+        <div class="form-group">
+            <label for="color-name">
+                Color Name:</label>
+            <input type="text" id="color-name" required>
+            <div class="error" id="name-error"></div>
+        </div>
+        <div class="form-group">
+            <label for="color-type">Type:</label>
+            <select id="color-type">
+                <option value="RGB">RGB</option>
+                <option value="RGBA">RGBA</option>
+                <option value="HEX">HEX</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="color-code">Code color:</label>
+            <input type="text" id="color-code" required>
+            <div class="error" id="code-error"></div>
+        </div>
+        <button type="button" class="save-button" id="save-btn">Save</button>
+    </form>
+
+    <h2>All colors:</h2>
+    <div class="colors" id="color-list"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
